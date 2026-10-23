@@ -606,3 +606,99 @@ h1,h2,h3,p{margin-top:0}
     height:245px;
   }
 }
+
+
+/* iOS Safari full-width + compact mobile pass — 2026-10-23 */
+html,body{
+  width:100%;
+  max-width:100%;
+}
+html{
+  background:var(--white);
+}
+@media (max-width: 430px){
+  body{
+    overflow-x:clip;
+  }
+  .topline,
+  .site-header,
+  .hero,
+  .expertise-section,
+  .suppliers-section,
+  .principles-section,
+  .statement,
+  .contact-section,
+  .site-footer{
+    width:100%;
+    max-width:100%;
+  }
+
+  .suppliers-section{
+    padding-top:60px;
+    padding-bottom:64px;
+  }
+  .suppliers-layout{
+    gap:20px;
+  }
+  .suppliers-left{
+    gap:22px;
+  }
+  .supplier-graphic{
+    margin-top:26px;
+    max-width:100%;
+    overflow:hidden;
+  }
+  .supplier-graphic svg{
+    width:100%;
+    overflow:hidden;
+  }
+  .sg-caption{
+    font-size:8px;
+    line-height:1.45;
+    letter-spacing:.12em;
+  }
+  .suppliers-right{
+    padding-top:4px;
+  }
+  .suppliers-right h2{
+    font-size:34px;
+    line-height:1.03;
+    letter-spacing:-.05em;
+    margin:20px 0 26px;
+  }
+  .suppliers-right>.supplier-lead{
+    font-size:18px;
+    line-height:1.48;
+    letter-spacing:-.02em;
+    margin-bottom:20px;
+  }
+  .suppliers-right>p{
+    font-size:14px;
+    line-height:1.72;
+    margin-bottom:18px;
+  }
+  .small-label,
+  .section-index-light{
+    font-size:8.5px;
+    letter-spacing:.14em;
+  }
+
+  .statement{
+    padding-top:70px;
+    padding-bottom:78px;
+  }
+  .contact-layout{
+    gap:44px;
+  }
+}
+
+@supports (padding: max(0px)){
+  @media (max-width: 430px){
+    .shell{
+      width:auto;
+      max-width:none;
+      margin-left:max(16px, env(safe-area-inset-left));
+      margin-right:max(16px, env(safe-area-inset-right));
+    }
+  }
+}
