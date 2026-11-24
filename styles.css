@@ -451,3 +451,27 @@ button,input{font:inherit}
   .footer-brand span{border-left:0;padding-left:0}
   .footer-nav{gap:14px 18px}
 }
+
+
+/* Legal / service pages */
+.legal-page{background:#f7f8fa;min-height:100vh}
+.legal-header{background:#fff;border-bottom:1px solid var(--line)}
+.legal-header .header-inner{justify-content:space-between}
+.back-link{font-size:13px;font-weight:700;color:var(--navy)}
+.back-link:hover{color:var(--blue)}
+.legal-main{
+  width:min(calc(100% - 40px),880px);
+  margin:0 auto;
+  padding:72px 0 90px;
+}
+.legal-main .eyebrow{margin-bottom:18px}
+.legal-main h1{margin:0 0 24px;font-size:48px;letter-spacing:-.045em;line-height:1.05}
+.legal-main h2{margin:38px 0 12px;font-size:22px;letter-spacing:-.025em}
+.legal-main p,.legal-main li{font-size:15px;line-height:1.75;color:#4f5968}
+.legal-main a{text-decoration:underline}
+.legal-main ul{padding-left:20px}
+.legal-meta{margin-bottom:36px;font-size:12px;color:#7c8490}
+@media(max-width:480px){
+  .legal-main{width:calc(100% - 28px);padding:48px 0 70px}
+  .legal-main h1{font-size:38px}
+}
