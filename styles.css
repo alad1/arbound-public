@@ -188,20 +188,47 @@ button,input{font:inherit}
 .category-overlay{
   position:absolute;
   inset:0;
-  background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.7) 100%);
+  background:linear-gradient(180deg,rgba(0,0,0,.02) 34%,rgba(0,0,0,.72) 100%);
+  transition:background .28s ease;
 }
-.category-label{
+.category-content{
   position:absolute;
   left:22px;
-  right:20px;
+  right:22px;
   bottom:18px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
   color:#fff;
+}
+.category-label{
   font-size:18px;
+  line-height:1.15;
   font-weight:800;
+}
+.category-description{
+  max-width:290px;
+  margin:9px 0 0;
+  font-size:13px;
+  line-height:1.42;
+  color:rgba(255,255,255,.94);
+  opacity:0;
+  transform:translateY(7px);
+  max-height:0;
+  overflow:hidden;
+  transition:opacity .24s ease,transform .24s ease,max-height .28s ease;
+}
+.category-card:hover .category-overlay,
+.category-card:focus .category-overlay{
+  background:linear-gradient(180deg,rgba(0,0,0,.13) 20%,rgba(0,0,0,.86) 100%);
+}
+.category-card:hover .category-description,
+.category-card:focus .category-description{
+  opacity:1;
+  transform:translateY(0);
+  max-height:90px;
+}
+.category-card:focus{outline:none}
+.category-card:focus-visible{
+  outline:3px solid var(--blue);
+  outline-offset:3px;
 }
 
 .brands-section{
@@ -336,7 +363,7 @@ button,input{font:inherit}
 .button-outline{border:1px solid #91a7ff;color:#fff}
 .button-outline:hover{background:#fff;color:var(--navy)}
 
-.site-footer{background:#07162d;color:#fff;padding:30px 0 18px}
+.site-footer{background:#000;color:#fff;padding:30px 0 18px}
 .footer-main{
   display:flex;
   align-items:center;
