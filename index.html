@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Arbound is an independent retail company focused on selected consumer products, dependable sourcing and straightforward service in the United States and Argentina.">
+  <meta name="description" content="Arbound is a U.S.-based independent retail company focused on everyday consumer products, responsible sourcing and product inquiries.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Arbound — Independent Retail Company">
   <meta property="og:description" content="Selected consumer products. Dependable sourcing. Straightforward service.">
@@ -27,7 +27,7 @@
     </button>
     <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
       <a href="#products">Products</a>
-      <a href="#brands">Brands</a>
+      
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -41,7 +41,7 @@
     <div class="wrap hero-content">
       <p class="kicker">Independent retail company</p>
       <h1>Products people use.<br>Brands we believe in.</h1>
-      <p class="hero-copy">Arbound offers selected consumer products through retail operations in the United States and Argentina.</p>
+      <p class="hero-copy">Arbound is a U.S.-based independent retail company developing a selection of everyday consumer products.</p>
       <a class="button button-blue" href="#products">Explore our products <span aria-hidden="true">→</span></a>
     </div>
   </section>
@@ -53,7 +53,7 @@
           <p class="eyebrow">What we sell</p>
           <h2 id="products-title">Everyday products, selected carefully.</h2>
         </div>
-        <p>Our assortment focuses on practical consumer categories with recognizable products and dependable demand.</p>
+        <p>We focus on everyday products across household, personal care, grocery and essential consumer categories. <a class="inline-contact" href="#contact">Contact us for product information and availability.</a></p>
       </div>
 
       <div class="category-grid">
@@ -96,21 +96,6 @@
     </div>
   </section>
 
-  <section class="brands-section" id="brands" aria-labelledby="brands-title">
-    <div class="wrap brands-row">
-      <h2 id="brands-title">Brands we carry</h2>
-      <div class="brand-list" aria-label="Selected brands carried by Arbound">
-        <span class="brand-name olay">Olay</span>
-        <span class="brand-name crest">Crest</span>
-        <span class="brand-name gillette">Gillette</span>
-        <span class="brand-name neutrogena">Neutrogena</span>
-        <span class="brand-name kraft">Kraft</span>
-        <span class="brand-name colgate">Colgate</span>
-        <span class="brand-name ziploc">Ziploc</span>
-      </div>
-    </div>
-    <div class="wrap brand-note">Brand names and trademarks are the property of their respective owners. No affiliation or endorsement is implied.</div>
-  </section>
 
   <section class="about-section" id="about" aria-labelledby="about-title">
     <div class="wrap about-grid">
@@ -121,13 +106,13 @@
       <div class="about-copy">
         <p class="eyebrow">About Arbound</p>
         <h2 id="about-title">Retail built around good products.</h2>
-        <p class="about-lead">Arbound is an independent retailer focused on sourcing useful, reliable products and making them available through our retail operations.</p>
-        <p>We prioritize straightforward purchasing, dependable supply and product categories people use every day.</p>
+        <p class="about-lead">Arbound is an independent retail company established in Wyoming, United States. We are developing our consumer product offering with a focus on useful products and responsible sourcing.</p>
+        <p>Our focus is on everyday consumer categories, clear purchasing processes and straightforward product inquiries, with operational support in Argentina.</p>
 
         <div class="feature-row">
           <div class="feature"><span class="feature-icon">□</span><strong>Selected products</strong></div>
-          <div class="feature"><span class="feature-icon">✓</span><strong>Recognizable brands</strong></div>
-          <div class="feature"><span class="feature-icon">▣</span><strong>Reliable fulfillment</strong></div>
+          <div class="feature"><span class="feature-icon">✓</span><strong>Consumer brands</strong></div>
+          <div class="feature"><span class="feature-icon">▣</span><strong>Customer inquiries</strong></div>
         </div>
       </div>
 
@@ -139,6 +124,7 @@
           <div>
             <strong>United States</strong>
             <span>Purchasing &amp; Operations</span>
+            <span class="mailing-address">Business mailing address (virtual mailbox)<br>611 E Carlson St Suite 116 PMB 7010<br>Cheyenne, WY 82009, USA</span>
             <a href="tel:+14844145667">+1 484 414 5667</a>
             <a href="mailto:commercial@arboundgroup.com">commercial@arboundgroup.com</a>
           </div>
@@ -147,13 +133,37 @@
         <div class="contact-block">
           <span class="flag" aria-hidden="true">🇦🇷</span>
           <div>
-            <strong>Argentina Office</strong>
+            <strong>Argentina Contact</strong>
             <span>General Pico, La Pampa</span>
             <a href="https://wa.me/5492302644517" target="_blank" rel="noopener noreferrer">WhatsApp +54 9 2302 644517</a>
             <a href="mailto:commercial@arboundgroup.com">commercial@arboundgroup.com</a>
           </div>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <section class="inquiry-section" id="inquiries" aria-labelledby="inquiry-title">
+    <div class="wrap inquiry-grid">
+      <div>
+        <p class="eyebrow">Customer &amp; business inquiries</p>
+        <h2 id="inquiry-title">How can we help?</h2>
+        <p>Contact us for product information, availability or purchasing inquiries.</p>
+        <a class="inline-contact" href="mailto:commercial@arboundgroup.com">commercial@arboundgroup.com</a>
+      </div>
+      <form id="inquiry-form" class="inquiry-form" hidden>
+        <div class="inquiry-fields">
+          <label>Full name<input name="name" autocomplete="name" required maxlength="100"></label>
+          <label>Email address<input type="email" name="email" autocomplete="email" required maxlength="254"></label>
+          <label>Company (optional)<input name="company" autocomplete="organization" maxlength="150"></label>
+          <label>Inquiry type<select name="type"><option>Product information</option><option>Business / purchasing</option><option>Other</option></select></label>
+        </div>
+        <label>Message<textarea name="message" rows="5" maxlength="3000" required></textarea></label>
+        <div class="inquiry-honeypot" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <p class="inquiry-note">We use your details to respond to your inquiry. <a href="privacy.html">Privacy policy</a>.</p>
+        <button class="button button-blue" type="submit">Send inquiry <span aria-hidden="true">→</span></button>
+        <p id="inquiry-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
@@ -173,11 +183,11 @@
     <div class="footer-brand">
       <img src="assets/logo-horizontal-light-blue.svg" alt="Arbound" width="185" height="49">
       <span>Retail Products</span>
-      <span>United States &amp; Argentina</span>
+      <span>United States · Argentina contact</span>
     </div>
     <nav class="footer-nav" aria-label="Footer navigation">
       <a href="#products">Products</a>
-      <a href="#brands">Brands</a>
+      
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a href="shipping.html">Shipping</a>

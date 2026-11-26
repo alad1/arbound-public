@@ -502,3 +502,28 @@ button,input{font:inherit}
   .legal-main{width:calc(100% - 28px);padding:48px 0 70px}
   .legal-main h1{font-size:38px}
 }
+
+
+/* Contact and inquiry additions */
+.mailing-address{line-height:1.6;margin:4px 0;overflow-wrap:anywhere}
+.contact-block a{overflow-wrap:anywhere}
+.about-grid>*{min-width:0}
+.inline-contact{color:var(--blue);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.inquiry-section{padding:42px 0;background:var(--soft);border-top:1px solid var(--line)}
+.inquiry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:48px;align-items:start}
+.inquiry-grid h2{font-size:clamp(30px,3vw,42px);line-height:1.08;letter-spacing:-.035em;margin:0 0 15px}
+.inquiry-grid p:not(.eyebrow){color:var(--muted);line-height:1.6}
+.inquiry-form[hidden]{display:none!important}
+.inquiry-form{display:grid;gap:14px;min-width:0}
+.inquiry-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.inquiry-form label{display:grid;gap:7px;font-weight:700;font-size:13px;min-width:0}
+.inquiry-form input,.inquiry-form select,.inquiry-form textarea{font:inherit;font-size:16px;box-sizing:border-box;width:100%;min-width:0;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:4px;padding:11px}
+.inquiry-form textarea{resize:vertical}
+.inquiry-form button{border:0;justify-self:start;cursor:pointer}
+.inquiry-form button:disabled{opacity:.65;cursor:wait}
+.inquiry-note{font-size:12px;margin:0}
+.inquiry-note a{text-decoration:underline}
+.inquiry-honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#inquiry-status{font-size:14px;margin:0}
+@media(max-width:760px){.inquiry-grid{grid-template-columns:minmax(0,1fr);gap:24px}.inquiry-section{padding:32px 0}}
+@media(max-width:480px){.inquiry-fields{grid-template-columns:1fr}}

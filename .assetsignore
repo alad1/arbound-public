@@ -2,3 +2,8 @@ wrangler.jsonc
 .assetsignore
 .git*
 README.md
+
+worker.js
+.dev.vars*
+.env*
+node_modules/

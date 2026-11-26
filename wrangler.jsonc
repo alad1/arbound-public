@@ -3,6 +3,21 @@
   "name": "arbound-public",
   "compatibility_date": "2026-10-09",
   "assets": {
-    "directory": "."
-  }
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "main": "worker.js",
+  "ratelimits": [
+    {
+      "name": "CONTACT_LIMIT",
+      "namespace_id": "73190216",
+      "simple": {
+        "limit": 3,
+        "period": 60
+      }
+    }
+  ]
 }
